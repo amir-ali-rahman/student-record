@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Student Data of a College</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="top-heading">Student's Record</h1>
+    </div>
+    <div class="container">
+
+        <div class="formBox">
+            <h3>Enter Details</h3>
+            <form id="student_data">
+                <div class="form-group">
+                    <label>Admission No.</label>
+                    <input type="text" name="admission_no" id="admission_no" placeholder="Admission No." />
+                </div>
+                <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" name="std_name" id="std_name" placeholder="Student Name" />
+                </div>
+                <div class="form-group">
+                    <label>Father's Name</label>
+                    <input type="text" name="f_name" id="f_name" placeholder="Father's Name" />
+                </div>
+                <div class="form-group">
+                    <label>Course</label>
+                    <input type="text" name="course" id="course" placeholder="Course" />
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="uniqueKey" id="uniqueKey" />
+                </div>
+                <div class="form-group">
+                    <span id="checkError" style="color:red;">Error Here</span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" onclick="addStudent()" class="btnRed">Add</button>
+                    <button type="submit" onclick="updateStudent()" class="btnBlue">Update</button>
+                </div>
+            </form>
+        </div>
+        <div class="dataBox">
+                <h1>List of Data</h1>
+                <div class="myTable">
+            <div class="stdTable" id="stdTable">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="displayDemo"></div>
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</body>
+</html>

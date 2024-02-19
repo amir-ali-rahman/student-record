@@ -1,0 +1,269 @@
+/**
+Author: Amir Ali Rahman
+Website: www.codinghub360.com
+GitHub: https://github.com/amir-ali-rahman
+Instagram: https://www.instagram.com/amir_ali_rahman/
+**/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; }
+    @media only screen and (max-width: 75em) {
+      html {
+        font-size: 59%; } }
+    @media only screen and (max-width: 56.25em) {
+      html {
+        font-size: 56%; } }
+    @media only screen and (min-width: 112.5em) {
+      html {
+        font-size: 65%; } }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F8F4EC;
+    line-height: 1.5;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #402B3A;
+    margin: 0 0 30px 0;
+    padding: 2px;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 3px 0;
+}
+
+.top-heading {
+    color: #fff;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formBox {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px 30px 20px 30px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.form-group {
+    padding: 1px 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-group input {
+    
+    height: 40px;
+    outline: none;
+    border: 2px solid rgba(214, 52, 132, 1);
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1.2rem;
+}
+
+.form-group input:hover {
+    background-color: rgba(214, 52, 132, 0.1);
+}
+
+.form-group input:focus {
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+.form-group label {
+    color: #000;
+    line-height: 40px;
+    display: block;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.form-group button {
+    width: 120px;
+    height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgba(214, 52, 132, 1);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.form-group button:hover {
+    background-color: rgba(214, 52, 132, 0.9);
+}
+
+.form-group .btnRed {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.form-group .btnBlue {
+    background-color: rgba(45, 50, 80, 1);
+}
+
+.form-group .btnRed:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+
+.form-group .btnBlue:hover {
+    background-color: rgba(45, 50, 80, 0.9);
+}
+
+.dataBox {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.dataBox .myTable {
+    display: flex;
+    max-height: 400px;
+    overflow-x: auto;
+}
+
+.dataBox .stdTable {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 10px 0;
+}
+
+.dataBox .tableHead {
+    display: table-row;
+    line-height: 50px;
+    background-color: rgba(222, 222, 222, 0.5);
+    font-weight: bold;
+}
+.dataBox .tableRow {
+    display: table-row;
+    border-bottom: 1px solid rgba(222, 222, 222, 0.5);
+}
+
+.dataBox .tableCol {
+    display: table-cell;
+    font-size: 1.2rem;
+}
+
+
+.dataBox .tableRow:hover {
+    background-color: rgba(214, 214, 214, 0.2);
+}
+
+.dataBox button {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgba(45, 50, 80, 1);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.dataBox button:hover {
+    background-color: rgba(45, 50, 80, 0.9);
+}
+
+.dataBox .editBtn {
+    background-color: rgba(45, 50, 80, 1);
+}
+
+.dataBox .deleteBtn {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.dataBox .deleteBtn:hover {
+    background-color: rgba(255, 0, 0, 0.7);;
+}
+
+#checkError {
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formBox {
+        max-width: 100%;
+    }
+
+    .formBox label {
+        font-size: 1.5rem;
+    }
+    .formBox input {
+        font-size: 1.5rem;
+    }
+
+    .formBox button {
+        font-size: 1.5rem;
+        width: 95px;
+        height: 40px;
+    }
+
+
+    .dataBox {
+        max-width: 100%;
+    }
+
+    .dataBox .tableHead {
+        line-height: 30px;
+    }
+
+    .dataBox .tableCol {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .dataBox button {
+        width: 40px;
+        height: 20px;
+        font-size: 1rem;
+    }
+}
